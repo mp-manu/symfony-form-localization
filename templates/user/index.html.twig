@@ -1,0 +1,9 @@
+
+
+{% block content %}
+    {{ form_start(form) }}
+    {{ form_row(form.firstname, {'label': 'form.firstname'|trans({}, 'messages', locale)}) }}
+    {{ form_row(form.lastname, {'label': 'form.lastname'|trans({}, 'messages', locale)}) }}
+    {{ form_row(form.description, {'label': 'form.description'|trans({}, 'messages', locale)}) }}
+    {{ form_end(form) }}
+{% endblock %}
